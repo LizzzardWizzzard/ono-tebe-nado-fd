@@ -1,1 +1,1 @@
-https://github.com/LizzzardWizzzard?tab=repositories
+https://github.com/LizzzardWizzzard/ono-tebe-nado-fd
