@@ -16,11 +16,12 @@ body {
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
 }
-.list-item :not(.list_active) {
-  text-decoration: underline;
-}
-.list_active {
+.list-active {
   list-style: none;
+}
+
+.active {
+  text-decoration: none;
 }
 .black-logo {
   height: 117px;
@@ -139,6 +140,9 @@ body {
 .card-picture {
   background-image: url("../images/card-lot-03.jpg");
 }
+.card_link {
+  text-decoration: none;
+}
 .card-title {
   padding: 48px 40px 37px;
   color: #ffffff;
@@ -200,7 +204,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 181px 50px 0;
+  margin: 181px 50px 80px;
   gap: 140px;
   font-size: 18px;
 }
