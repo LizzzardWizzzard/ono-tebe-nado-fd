@@ -11,11 +11,11 @@
   </head>
   <body>
     <header class="header">
-      <ul class="nav header-nav">
-        <li class="active">главная</li>
-        <li>посмотреть лоты</li>
-        <li>об аукционе</li>
-      </ul>
+      <nav class="header-nav">
+        <li class="list_active"><a>главная</a></li>
+        <li class="list-item"><a>посмотреть лоты</a></li>
+        <li><a class="list-item">об аукционе</a></li>
+      </nav>
       <a
         ><img class="black-logo" src="images/logo-black.svg" alt="черное лого"
       /></a>
@@ -26,10 +26,7 @@
       </address>
     </header>
     <main>
-      <section
-        class="cover"
-        style="background-image: url(&quot;images/cover.jpg&quot;)"
-      >
+      <section class="cover">
         <div class="overlay">
           <h1 class="main-title">
             <span class="accent-span"> оно </span>
@@ -44,61 +41,59 @@
           </div>
         </div>
       </section>
-      <section class="container lots">
+      <section class="container">
         <h2 class="title-lots">Лоты</h2>
         <ul class="lots_card-list">
-          <li
-            class="card"
-            style="background-image: url(&quot;images/card-lot-01.jpg&quot;)"
-          >
+          <li class="lots__card-list-item card-film">
             <div class="overlay">
-              <h3 class="card-title">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <p class="card-text card-text_film">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
+              <div class="card">
+                <h3 class="card-title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card-text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </div>
             </div>
           </li>
-          <li
-            class="card"
-            style="background-image: url(&quot;images/card-lot-02.jpg&quot;)"
-          >
+          <li class="lots__card-list-item card-book">
             <div class="overlay">
-              <h3 class="card-title">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
-              <p class="card-text">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
+              <div class="card">
+                <h3 class="card-title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card-text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </div>
             </div>
           </li>
-          <li
-            class="card"
-            style="background-image: url(&quot;images/card-lot-03.jpg&quot;)"
-          >
+          <li class="lots__card-list-item card-picture">
             <div class="overlay">
-              <h3 class="card-title">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
-              <p class="card-text card-text_picture">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
+              <div class="card">
+                <h3 class="card-title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card-text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </div>
             </div>
           </li>
         </ul>
         <a class="more">посмотреть больше</a>
       </section>
-      <section class="about container">
+      <section class="about">
         <div class="about_logo">
           <img
             class="white-logo"
@@ -106,7 +101,7 @@
             alt="белое лого"
           />
         </div>
-        <div>
+        <article>
           <h2 class="title-about">Об аукционе</h2>
           <div class="text-about_container">
             <p class="text-about">
@@ -120,13 +115,13 @@
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
-              на критику, кажущуюся простоту или сложность, сейчас без этих
-              лотов невозможно представить современную культуру. Когда в эти
-              вещи не верил никто, продолжали верить их создатели. И сейчас эти
-              лоты стали культовыми.
+              <br />на критику, кажущуюся простоту или сложность, сейчас без
+              этих лотов невозможно представить современную культуру. Когда в
+              эти вещи не верил никто, продолжали верить их создатели. И сейчас
+              эти лоты стали культовыми.
             </p>
           </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="footer container">
@@ -135,16 +130,31 @@
         <a class="links" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
-      <ul class="nav footer-nav">
-        <li class="list active">главная</li>
-        <li class="list">посмотреть лоты</li>
-        <li class="list">об аукционе</li>
+      <nav class="footer-nav">
+        <li class="list_active"><a class="active">главная</a></li>
+        <li class="list-item"><a>посмотреть лоты</a></li>
+        <li class="list-item"><a>об аукционе</a></li>
+      </nav>
+      <ul class="underlink">
+        <li>
+          <a target="_blank"
+            ><img class="picture_link" src="images/yt.svg" alt="сыллка на ютуб"
+          /></a>
+        </li>
+        <li>
+          <a target="_blank"
+            ><img class="picture_link" src="images/vk.svg" alt="ссылка на вк"
+          /></a>
+        </li>
+        <li>
+          <a target="_blank"
+            ><img
+              class="picture_link"
+              src="images/pinterest.svg"
+              alt="ссылка на пинтерест"
+          /></a>
+        </li>
       </ul>
-      <div class="underlink">
-        <img class="yt" src="images/yt.svg" alt="сыллка на ютуб" />
-        <img class="vk" src="images/vk.svg" alt="ссылка на вк" />
-        <img class="pt" src="images/pinterest.svg" alt="ссылка на пинтерест" />
-      </div>
     </footer>
   </body>
 </html>
